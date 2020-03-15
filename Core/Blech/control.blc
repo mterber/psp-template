@@ -1,0 +1,18 @@
+//
+// A very basic example that toggles the LED state in every reaction.
+// @inputs none
+// @outputs The LED state.
+//
+@[EntryPoint]
+activity Main ()(led: bool)
+    // On boot: LED on.
+    led = true
+    repeat
+        // On next reaction: LED off.
+        await true
+        led = false
+        // On next reaction: LED on.
+        await true
+        led = true
+    end
+end

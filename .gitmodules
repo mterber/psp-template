@@ -1,0 +1,3 @@
+[submodule "Drivers/LCD"]
+	path = Drivers/LCD
+	url = https://github.com/mterber/psp-lcd.git
